@@ -1,6 +1,9 @@
 module.exports = {
   theme: {},
-  plugins: [require('@tailwindcss/custom-forms')],
+  plugins: [
+    require('@tailwindcss/custom-forms'),
+    require('@tailwindcss/typography'),
+  ],
   purge: [
     './src/**/*.js',
     './src/**/*.njk',

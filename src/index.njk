@@ -5,7 +5,7 @@ title: Home
 {% extends "layout.njk" %}
 
 {% block body %}
-  <main x-data="{ message: 'This is the {{ title }} page.' }">
-    <p x-text="message"></p>
+  <main class="p-4 prose">
+    <h1>This is the {{ title | lower }} page.</h1>
   </main>
 {% endblock %}

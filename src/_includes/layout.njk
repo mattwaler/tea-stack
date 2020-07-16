@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/main.bundle.css">
-  {% block styles %}{% endblock %}
   <script src="/assets/main.bundle.js" defer></script>
-  {% block scripts %}{% endblock %}
   <title>{{ title }}</title>
+  {% block head %}{% endblock %}
 </head>
 <body>
   {% include 'header.njk' %}

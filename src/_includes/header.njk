@@ -1,4 +1,14 @@
-<nav class="p-4 space-x-4">
-  <a class="" href="/">Home</a>
-  <a class="" href="/about">About</a>
+<nav class="p-4 space-x-2">
+  <a
+    class="{{ 'font-black' if page.url == '/' }}"
+    href="/"
+  >
+    Home
+  </a>
+  <a
+    class="{{ 'font-black' if page.url == '/about/' }}"
+    href="/about"
+  >
+    About
+  </a>
 </nav>
