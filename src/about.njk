@@ -1,0 +1,11 @@
+---
+title: About
+---
+
+{% extends "layout.njk" %}
+
+{% block body %}
+  <main x-data="{ message: 'This is the {{ title }} page.' }">
+    <p x-text="message"></p>
+  </main>
+{% endblock %}
