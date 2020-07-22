@@ -3,7 +3,7 @@ module.exports = (config) => {
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
     open: true,
-    // Fix for Turbolinks & Browserstack
+    // Tweak for Turbolinks & Browserstack Compatibility
     snippetOptions: {
       rule: {
         match: /<\/head>/i,

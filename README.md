@@ -1,6 +1,6 @@
-# The EAT Stack
+# The TEA Stack
 
-Welcome to the shortest stack out there. This stack combines Eleventy, AlpineJS, and TailwindCSS to make static site authoring easy and minimal!
+Welcome to the shortest stack out there. This stack combines TailwindCSS, Eleventy, and AlpineJS to make static site authoring easy and minimal!
 
 ## Getting Started
 
@@ -19,6 +19,5 @@ For the lazy:
 
 A short list of extensions for VS Code (my primary editor) that make working with this template even more awesome!
 
-- Liquid (For some reason this improves syntax highlighting in Nunjucks files?)
-- Nunjucks
+- Nunjucks Template by eseom
 - TailwindCSS Intellisense

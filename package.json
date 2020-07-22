@@ -1,7 +1,7 @@
 {
-  "name": "eat-stack",
+  "name": "tea-stack",
   "version": "1.0.0",
-  "description": "A starter template for the EAT stack.",
+  "description": "A starter template for the TEA stack.",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production npm-run-all clean -p build:*",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattwaler/eat-stack.git"
+    "url": "git+https://github.com/mattwaler/tea-stack.git"
   },
   "prettier": {
     "semi": false,
@@ -31,9 +31,9 @@
   "author": "Matt Waler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattwaler/eat-stack/issues"
+    "url": "https://github.com/mattwaler/tea-stack/issues"
   },
-  "homepage": "https://github.com/mattwaler/eat-stack#readme",
+  "homepage": "https://github.com/mattwaler/tea-stack#readme",
   "dependencies": {
     "alpinejs": "^2.4.1",
     "turbolinks": "^5.2.0"
