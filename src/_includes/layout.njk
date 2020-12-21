@@ -8,7 +8,7 @@
   <title>{{ title }}</title>
   {% block head %}{% endblock %}
 </head>
-<body>
+<body class="{{ 'debug-screens' if env.devMode }}">
   {% include 'header.njk' %}
   {% block body %}{% endblock %}
 </body>

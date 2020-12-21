@@ -1,8 +1,18 @@
 module.exports = {
-  theme: {},
+  darkMode: false,
+  theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+    },
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
   plugins: [
-    require('@tailwindcss/custom-forms'),
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('tailwindcss-debug-screens'),
   ],
   purge: [
     './src/**/*.js',
