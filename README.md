@@ -11,7 +11,7 @@ Just run the usual commands and peep the `package.json` file to see the availabl
 For the lazy:
 
 - `npm i` to build that big ol' `node_modules` folder
-- `npm start` to boot up that dev server and start building
+- `npm run dev` to boot up that dev server and start building
 - `npm run build` when you're ready to build a production bundle
 
 **Bonus**

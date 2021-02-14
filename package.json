@@ -8,9 +8,9 @@
     "build:eleventy": "eleventy",
     "build:webpack": "webpack",
     "clean": "rm -rf dist",
-    "start": "npm-run-all clean -p build:* -p start:*",
-    "start:eleventy": "eleventy --serve --quiet",
-    "start:webpack": "webpack --watch"
+    "dev": "npm-run-all clean -p build:* -p dev:*",
+    "dev:eleventy": "eleventy --serve --quiet",
+    "dev:webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
