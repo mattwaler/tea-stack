@@ -10,6 +10,10 @@
 </head>
 <body class="{{ 'debug-screens' if env.devMode }}">
   {% include 'header.njk' %}
-  {% block body %}{% endblock %}
+  {% block body %}
+    <div class="container py-8">
+      {{ content | safe }}
+    </div>
+  {% endblock %}
 </body>
 </html>
