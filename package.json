@@ -10,7 +10,7 @@
     "clean": "rm -rf dist",
     "dev": "npm-run-all clean -p build:* -p dev:*",
     "dev:eleventy": "eleventy --serve --quiet",
-    "dev:webpack": "webpack --watch"
+    "dev:webpack": "cross-env NODE_ENV=development webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.12.1",
     "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.1.0",
     "cross-env": "^7.0.2",
@@ -50,7 +50,7 @@
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
     "style-loader": "^2.0.0",
-    "tailwindcss": "^2.0.2",
+    "tailwindcss": "^2.1.4",
     "tailwindcss-debug-screens": "^2.0.0",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0"
