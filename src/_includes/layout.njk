@@ -8,7 +8,7 @@
   <title>{{ title }} | TEA Stack</title>
   {% block head %}{% endblock %}
 </head>
-<body class="{{ 'debug-screens' if env.devMode }}">
+<body hx-boost="true" class="{{ 'debug-screens' if env.devMode }}">
   {% include 'header.njk' %}
   {% block body %}
     <div class="container py-8">

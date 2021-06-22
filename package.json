@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
-    "build:eleventy": "eleventy",
-    "build:webpack": "webpack",
+    "build:11ty": "eleventy --quiet",
+    "build:css": "tailwindcss -i src/_bundle/main.pcss -o dist/assets/main.bundle.css --minify --postcss",
+    "build:js": "esbuild src/_bundle/main.js --outfile=dist/assets/main.bundle.js --bundle",
     "clean": "rm -rf dist",
-    "dev": "npm-run-all clean -p build:* -p dev:*",
-    "dev:eleventy": "eleventy --serve --quiet",
-    "dev:webpack": "cross-env NODE_ENV=development webpack --watch"
+    "dev": "cross-env NODE_ENV=development npm-run-all -p dev:*",
+    "dev:11ty": "eleventy --serve --quiet",
+    "dev:css": "tailwindcss -i src/_bundle/main.pcss -o dist/assets/main.bundle.css --watch --postcss",
+    "dev:js": "esbuild src/_bundle/main.js --outfile=dist/assets/main.bundle.js --bundle --watch"
   },
   "repository": {
     "type": "git",
@@ -35,24 +37,19 @@
   },
   "homepage": "https://github.com/mattwaler/tea-stack#readme",
   "dependencies": {
-    "alpinejs": "^2.8.0",
-    "turbolinks": "^5.2.0"
+    "alpinejs": "^3.1.0",
+    "htmx.org": "^1.4.1",
+    "lazysizes": "^5.3.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@tailwindcss/forms": "^0.2.1",
-    "autoprefixer": "^10.1.0",
-    "cross-env": "^7.0.2",
-    "css-loader": "^5.0.1",
-    "mini-css-extract-plugin": "^1.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "cross-env": "^6.0.3",
+    "esbuild": "^0.12.9",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.10",
     "postcss-import": "^14.0.0",
-    "postcss-loader": "^4.1.0",
-    "style-loader": "^2.0.0",
-    "tailwindcss": "^2.1.4",
-    "tailwindcss-debug-screens": "^2.0.0",
-    "webpack": "^5.11.0",
-    "webpack-cli": "^4.2.0"
+    "tailwindcss": "^2.2.2",
+    "tailwindcss-debug-screens": "^1.1.0"
   }
 }
