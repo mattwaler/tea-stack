@@ -1,6 +1,4 @@
 import Alpine from 'alpinejs'
-import 'htmx.org'
-import 'lazysizes'
 
 window.Alpine = Alpine
 
@@ -8,11 +6,6 @@ window.Alpine = Alpine
 window.addEventListener('DOMContentLoaded', () => {
   Alpine.start()
 });
-
-// Restart Alpine when the DOM is altered by HTMX.
-document.body.addEventListener('htmx:afterSwap', () => {
-  Alpine.start()
-})
 
 // Basic Store Example in Alpine.
 window.addEventListener('alpine:initializing', () => {

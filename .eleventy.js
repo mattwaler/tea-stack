@@ -20,5 +20,6 @@ module.exports = (config) => {
       input: 'src',
       output: 'dist',
     },
+    markdownTemplateEngine: 'njk',
   }
 }

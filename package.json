@@ -37,9 +37,7 @@
   },
   "homepage": "https://github.com/mattwaler/tea-stack#readme",
   "dependencies": {
-    "alpinejs": "^3.1.0",
-    "htmx.org": "^1.4.1",
-    "lazysizes": "^5.3.0"
+    "alpinejs": "^3.1.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
