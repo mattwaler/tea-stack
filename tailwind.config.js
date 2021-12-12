@@ -1,6 +1,10 @@
 module.exports = {
-  mode: 'jit',
-  darkMode: false,
+  content: ['./src/**/*.{js,md,njk,svg}'],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-debug-screens'),
+  ],
   theme: {
     container: {
       center: true,
@@ -11,10 +15,4 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('tailwindcss-debug-screens'),
-  ],
-  purge: ['./src/**/*.{js,md,njk,svg}'],
 }

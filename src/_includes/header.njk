@@ -4,7 +4,7 @@
       Tea Stack
     </a>
     {# Desktop Nav #}
-    <div class="hidden md:flex items-center gap-4">
+    <div class="hidden md:flex items-center gap-8">
       {% for item in navigation %}
         <a
           class="{{ 'font-black' if page.url == item.route }}"
@@ -14,7 +14,10 @@
         </a>
       {% endfor %}
     </div>
-    <button class="md:hidden" @click="$store.nav.toggle()">
+    <button
+      class="md:hidden"
+      @click="$store.nav.toggle()"
+    >
       <svg x-show="!$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
       </svg>
@@ -23,7 +26,12 @@
       </svg>
     </button>
   </div>
-  <nav class="container mt-8 flex flex-col gap-2 md:hidden" x-cloak x-show="$store.nav.isOpen">
+  {# Mobile Navigation #}
+  <nav
+    class="container mt-8 flex flex-col gap-3 md:hidden"
+    x-cloak
+    x-show="$store.nav.isOpen"
+  >
     {% for item in navigation %}
       <a
         class="{{ 'font-black' if page.url == item.route }}"

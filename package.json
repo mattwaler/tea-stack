@@ -40,14 +40,14 @@
     "alpinejs": "^3.1.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@tailwindcss/forms": "^0.2.1",
-    "@tailwindcss/typography": "^0.4.1",
-    "cross-env": "^6.0.3",
-    "esbuild": "^0.12.9",
+    "@11ty/eleventy": "^1.0.0-beta.8",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.14.3",
     "npm-run-all": "^4.1.5",
     "postcss-import": "^14.0.0",
-    "tailwindcss": "^2.2.2",
-    "tailwindcss-debug-screens": "^1.1.0"
+    "tailwindcss": "^3.0.1",
+    "tailwindcss-debug-screens": "^2.2.1"
   }
 }
