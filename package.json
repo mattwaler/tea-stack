@@ -4,9 +4,9 @@
   "description": "A starter template for the TEA stack.",
   "main": "index.js",
   "config": {
-    "css_in": "src/_bundle/main.pcss",
+    "css_in": "src/_styles/_main.pcss",
     "css_out": "dist/assets/main.bundle.css",
-    "js_in": "src/_bundle/main.js",
+    "js_in": "src/_scripts/_main.js",
     "js_out": "dist/assets/main.bundle.js"
   },
   "scripts": {
