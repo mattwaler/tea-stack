@@ -5,4 +5,4 @@ layout: markdown.njk
 
 # This is the {{ title }} page.
 
-It is written at `src/{{ title|lower|replace(" ", "-") }}.md`
+This page is authored in markdown at `src/{{ title|lower|replace(" ", "-") }}.md`
