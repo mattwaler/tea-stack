@@ -22,10 +22,10 @@ It also uses the following build tools:
 
 ## 🛠 Getting Started
 
-- ⚙️ `nvm use` to switch to the valid node version
-- 🗂 `npm i` to build that big ol' `node_modules` folder
-- 👨🏻‍💻 `npm run dev` to boot up a live-reloading dev server
-- 📦 `npm run build` to build your production-ready site
+- `nvm use` to switch to the valid node version
+- `npm i` to build that big ol' `node_modules` folder
+- `npm run dev` to boot up a live-reloading dev server
+- `npm run build` to build your production-ready site
 
 Feel free to peep the `package.json` file to see all available scripts and packages being utilized.
 
