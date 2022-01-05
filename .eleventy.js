@@ -1,4 +1,19 @@
+const Twig = require('twig')
+
 module.exports = (config) => {
+  config.addTemplateFormats('twig')
+  config.addExtension('twig', {
+    compile: async function(inputContent, inputPath) {
+      return async (data) => {
+        const template = Twig.twig({
+          allowInlineIncludes: true,
+          data: inputContent,
+          path: './src/_includes/',
+        })
+        return template.render(data)
+      }
+    }
+  })
   config.addPassthroughCopy({ 'public': './' })
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
@@ -9,6 +24,6 @@ module.exports = (config) => {
       input: 'src',
       output: 'dist',
     },
-    markdownTemplateEngine: 'njk',
+    markdownTemplateEngine: 'twig',
   }
 }

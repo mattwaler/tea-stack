@@ -1,8 +1,8 @@
 ---
 title: Page 2
-layout: markdown.njk
+layout: markdown.twig
 ---
 
-# This is the {{ title }} page.
+# This is {{ title }}.
 
-This page is authored in markdown at `src/{{ title|lower|replace(" ", "-") }}.md`
+This page is authored in markdown at `src/{{ title|lower|replace({ " ": "-" }) }}.md`
