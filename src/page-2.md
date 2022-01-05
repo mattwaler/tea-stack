@@ -1,6 +1,6 @@
 ---
 title: Page 2
-layout: markdown.twig
+layout: markdown
 ---
 
 # This is {{ title }}.

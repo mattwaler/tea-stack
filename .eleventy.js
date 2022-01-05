@@ -8,7 +8,7 @@ module.exports = (config) => {
         const template = Twig.twig({
           allowInlineIncludes: true,
           data: inputContent,
-          path: './src/_includes/',
+          path: './src/_partials/',
         })
         return template.render(data)
       }
@@ -21,6 +21,7 @@ module.exports = (config) => {
   })
   return {
     dir: {
+      includes: '_partials',
       input: 'src',
       output: 'dist',
     },
