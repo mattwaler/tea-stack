@@ -7,7 +7,7 @@
     <div class="hidden md:flex items-center gap-8">
       {% for item in navigation %}
         <a
-          class="{{ page.url == item.route ? 'font-black' }}"
+          class="{{ 'font-black' if page.url == item.route }}"
           href="{{ item.route }}"
         >
           {{ item.name }}
@@ -31,7 +31,7 @@
   >
     {% for item in navigation %}
       <a
-        class="{{ page.url == item.round ? 'font-black' }}"
+        class="{{ 'font-black' if page.url == item.route }}"
         href="{{ item.route }}"
       >
         {{ item.name }}

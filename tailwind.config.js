@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{js,md,twig,svg}'],
+  content: ['./src/**/*.{js,md,njk,svg}'],
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),

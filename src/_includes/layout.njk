@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
   <script src="/assets/main.bundle.js" defer></script>
   <title>{{ title }} | TEA Stack</title>
 </head>
-<body class="{{ env.devMode ? 'debug-screens' }}">
-  {% include 'header.twig' %}
+
+<body class="{{ 'debug-screens' if env.devMode }}">
+  {% include 'header.njk' %}
   {% block body %}
-    {{ content }}
+    {{ content | safe }}
   {% endblock %}
 </body>
+
 </html>
