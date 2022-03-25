@@ -4,21 +4,20 @@
   "description": "A starter template for the TEA stack.",
   "main": "index.js",
   "config": {
-    "css_in": "src/_styles/_main.pcss",
-    "css_out": "dist/assets/main.bundle.css",
-    "js_in": "src/_scripts/_main.js",
-    "js_out": "dist/assets/main.bundle.js"
+    "11ty": "eleventy --quiet",
+    "css": "tailwindcss -i src/_styles/_main.pcss -o dist/assets/main.bundle.css --postcss",
+    "js": "esbuild src/_scripts/_main.js --outfile=dist/assets/main.bundle.js --bundle"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
-    "build:11ty": "eleventy --quiet",
-    "build:css": "tailwindcss -i $npm_package_config_css_in -o $npm_package_config_css_out --minify --postcss",
-    "build:js": "esbuild $npm_package_config_js_in --outfile=$npm_package_config_js_out --bundle",
+    "build:11ty": "$npm_package_config_11ty",
+    "build:css": "$npm_package_config_css --minify",
+    "build:js": "$npm_package_config_js --minify",
     "clean": "rm -rf dist",
     "dev": "cross-env NODE_ENV=development npm-run-all -p dev:*",
-    "dev:11ty": "eleventy --serve --quiet",
-    "dev:css": "tailwindcss -i $npm_package_config_css_in -o $npm_package_config_css_out --watch --postcss",
-    "dev:js": "esbuild $npm_package_config_js_in --outfile=$npm_package_config_js_out --bundle --watch"
+    "dev:11ty": "$npm_package_config_11ty --serve",
+    "dev:css": "$npm_package_config_css --watch",
+    "dev:js": "$npm_package_config_js --watch"
   },
   "repository": {
     "type": "git",
