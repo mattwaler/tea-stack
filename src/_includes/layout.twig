@@ -9,10 +9,10 @@
   <title>{{ title }} | TEA Stack</title>
 </head>
 
-<body class="{{ 'debug-screens' if env.devMode }}">
-  {% include 'header.njk' %}
+<body class="{{ env.devMode ? 'debug-screens' }}">
+  {% include 'header.twig' %}
   {% block body %}
-    {{ content | safe }}
+    {{ content|raw }}
   {% endblock %}
 </body>
 

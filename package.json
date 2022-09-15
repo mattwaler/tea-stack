@@ -46,12 +46,15 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@factorial/eleventy-plugin-twig": "^0.1.1",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
-    "esbuild": "^0.14.49",
+    "esbuild": "^0.15.7",
     "npm-run-all": "^4.1.5",
-    "postcss-import": "^14.1.0",
+    "postcss-import": "^15.0.0",
     "tailwindcss": "^3.1.6",
-    "tailwindcss-debug-screens": "^2.2.1"
+    "tailwindcss-debug-screens": "^2.2.1",
+    "twig": "^1.15.4"
   }
 }
