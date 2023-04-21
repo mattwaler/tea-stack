@@ -45,7 +45,7 @@
     "alpinejs": "^3.1.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^2.0.1",
     "@factorial/eleventy-plugin-twig": "^0.1.1",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
