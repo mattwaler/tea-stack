@@ -3,21 +3,14 @@
   "version": "1.0.0",
   "description": "A starter template for the TEA stack.",
   "main": "index.js",
-  "config": {
-    "11ty": "eleventy --quiet",
-    "css": "tailwindcss -i src/_styles/_main.pcss -o dist/assets/main.bundle.css --postcss",
-    "js": "esbuild src/_scripts/_main.js --outfile=dist/assets/main.bundle.js --bundle"
-  },
   "scripts": {
     "build": "NODE_ENV=production npm-run-all clean -p build:*",
-    "build:11ty": "$npm_package_config_11ty",
-    "build:css": "$npm_package_config_css --minify",
-    "build:js": "$npm_package_config_js --minify",
+    "build:11ty": "eleventy --quiet",
+    "build:vite": "vite build",
     "clean": "rm -rf dist",
     "dev": "NODE_ENV=development npm-run-all -p dev:*",
-    "dev:11ty": "$npm_package_config_11ty --serve",
-    "dev:css": "$npm_package_config_css --watch",
-    "dev:js": "$npm_package_config_js --watch"
+    "dev:11ty": "eleventy --quiet --serve",
+    "dev:vite": "vite"
   },
   "repository": {
     "type": "git",
@@ -49,11 +42,12 @@
     "@factorial/eleventy-plugin-twig": "^0.1.1",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
-    "esbuild": "^0.15.7",
+    "autoprefixer": "^10.4.14",
     "npm-run-all": "^4.1.5",
     "postcss-import": "^15.0.0",
     "tailwindcss": "^3.1.6",
     "tailwindcss-debug-screens": "^2.2.1",
-    "twig": "^1.15.4"
+    "twig": "^1.15.4",
+    "vite": "^4.3.3"
   }
 }
