@@ -9,11 +9,7 @@ This project uses the following frameworks:
 - [TailwindCSS](https://tailwindcss.com/)
 - [Eleventy](https://www.11ty.dev/)
 - [Alpine.js](https://alpinejs.dev/)
-
-It also uses the following build tools:
-
-- [ESBuild](https://esbuild.github.io/)
-- [Tailwind CLI](https://tailwindcss.com/docs/installation)
+- [Vite][https://vitejs.dev]
 
 ## ⭐️ Requirements
 
