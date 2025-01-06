@@ -1,4 +1,4 @@
-const twig = require("@factorial/eleventy-plugin-twig");
+import twig from '@factorial/eleventy-plugin-twig'
 
 const twigOptions = {
   twig: {
@@ -12,7 +12,7 @@ const twigOptions = {
   },
 };
 
-module.exports = (config) => {
+export default function (config) {
   config.addPassthroughCopy({ 'public': './' })
   config.addPlugin(twig, twigOptions)
   config.setBrowserSyncConfig({

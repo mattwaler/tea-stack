@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A starter template for the TEA stack.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "NODE_ENV=production npm-run-all clean -p build:*",
     "build:11ty": "eleventy --quiet",
@@ -38,8 +39,8 @@
     "alpinejs": "^3.1.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@factorial/eleventy-plugin-twig": "^0.1.2",
+    "@11ty/eleventy": "^3.0.0",
+    "@factorial/eleventy-plugin-twig": "^0.2.0",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.14",
@@ -48,6 +49,6 @@
     "tailwindcss": "^3.1.6",
     "tailwindcss-debug-screens": "^2.2.1",
     "twig": "^1.15.4",
-    "vite": "^5.2.14"
+    "vite": "^6.0.7"
   }
 }
