@@ -1,8 +1,22 @@
-@import "tailwindcss/base";
-@import "./base.css";
+@import 'tailwindcss' source('../../src');
+@import './base.css' layer(base);
+@import './components.css' layer(components);
+@import './utilities.css' layer(utilities);
 
-@import "tailwindcss/components";
-@import "./components.css";
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
 
-@import "tailwindcss/utilities";
-@import "./utilities.css";
+@utility container {
+	margin-inline: auto;
+	padding-inline: 2rem;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
