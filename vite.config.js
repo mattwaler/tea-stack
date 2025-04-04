@@ -6,6 +6,7 @@ export default {
   plugins: [
     tailwindcss()
   ],
+  publicDir: false,
 	build: {
 		outDir: './dist/assets',
 		assetsDir: '',
