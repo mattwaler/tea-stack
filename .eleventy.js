@@ -15,6 +15,9 @@ const twigOptions = {
 export default function (config) {
   config.addPassthroughCopy({ 'public': './' })
   config.addPlugin(twig, twigOptions)
+  config.setServerOptions({
+    domDiff: false,
+  })
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
     open: true,

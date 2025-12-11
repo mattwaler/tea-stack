@@ -11,7 +11,7 @@ export default {
 		outDir: './dist/assets',
 		assetsDir: '',
 		rollupOptions: {
-			input: ['./src/_scripts/_main.js', './src/_styles/_main.css'],
+			input: ['./src/_bundle/app.js', './src/_bundle/app.css'],
       output: {
         entryFileNames: `[name].js`,
         chunkFileNames: `[name].js`,

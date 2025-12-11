@@ -1,8 +1,4 @@
 @import 'tailwindcss' source('../../src');
-@import './base.css' layer(base);
-@import './components.css' layer(components);
-@import './utilities.css' layer(utilities);
-
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
@@ -18,5 +14,14 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  html {
+  @apply antialiased text-gray-800 font-sans;
+}
+
+  /* This allows you to hide Alpine DOM until it's ready to go. */
+  [x-cloak] {
+    @apply hidden;
   }
 }
